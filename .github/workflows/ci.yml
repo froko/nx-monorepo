@@ -43,8 +43,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Find Git SHAs for affected tasks
-        uses: nrwl/nx-set-shas@v4
-
       - name: Run affected tasks
         run: pnpm affected
