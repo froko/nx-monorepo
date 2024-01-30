@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - next
   pull_request:
 
 jobs:
@@ -43,8 +42,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Find Git SHAs for affected tasks
-        uses: nrwl/nx-set-shas@v4
-
       - name: Run affected tasks
-        run: pnpm affected
+        uses: mansagroup/nrwl-nx-action@v3
+        with:
+          targets: lint,build,test
