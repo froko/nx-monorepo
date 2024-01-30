@@ -1,6 +1,6 @@
 {
   "name": "nx-monorepo",
-  "version": "0.0.1",
+  "version": "1.0.0-next.1",
   "description": "Nx Monorepo starter project",
   "author": "Patrick Ineichen",
   "repository": {
