@@ -11,6 +11,7 @@
   "scripts": {
     "format": "prettier . --write",
     "affected": "nx affected -t lint,build,test --parallel",
+    "ci": "nx run-many -t lint,build,test --parallel --ci",
     "lint": "nx run-many -t lint --parallel",
     "build": "nx run-many -t build --parallel",
     "test": "nx run-many -t test --parallel",
