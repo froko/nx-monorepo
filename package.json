@@ -9,9 +9,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "format": "prettier . --write"
+    "format": "prettier . --write && nx run-many -t format --parallel",
+    "affected": "nx affected -t lint,build,test",
+    "lint": "nx run-many -t lint --parallel",
+    "build": "nx run-many -t build --parallel",
+    "test": "nx run-many -t test"
   },
   "devDependencies": {
+    "nx": "^18.2.3",
     "prettier": "^3.2.5"
   },
   "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
