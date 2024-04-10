@@ -1,13 +1,18 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import simplePlantUML from '@akebifiky/remark-simple-plantuml';
 
 // https://astro.build/config
 export default defineConfig({
+  outDir: './dist/docs',
+  markdown: {
+    remarkPlugins: [simplePlantUML]
+  },
   integrations: [
     starlight({
-      title: 'My Docs',
+      title: 'nx-monorepo',
       social: {
-        github: 'https://github.com/withastro/starlight'
+        github: 'https://github.com/froko/nx-monorepo',
       },
       sidebar: [
         {

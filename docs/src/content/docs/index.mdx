@@ -1,5 +1,5 @@
 ---
-title: Welcome to Starlight
+title: nx-monorepo
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
@@ -17,6 +17,19 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## PlantUML
+
+```plantuml
+@startuml component
+actor client
+node app
+database db
+
+db -> app
+app -> client
+@enduml
+```
 
 ## Next steps
 
