@@ -12,19 +12,37 @@ export default defineConfig({
     starlight({
       title: 'nx-monorepo',
       social: {
-        github: 'https://github.com/froko/nx-monorepo',
+        github: 'https://github.com/froko/nx-monorepo'
       },
       sidebar: [
         {
-          label: 'Guides',
+          label: 'Architecture',
           items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', link: '/guides/example/' }
+            { label: 'Introduction and Goals', link: '/arc42/introduction-and-goals' },
+            { label: 'Architecture Constraints', link: '/arc42/architecture-constraints' },
+            { label: 'System Scope and Context', link: '/arc42/system-scope-and-context' },
+            { label: 'Solution Strategy', link: '/arc42/solution-strategy' },
+            { label: 'Building Block View', link: '/arc42/building-block-view' },
+            { label: 'Runtime View', link: '/arc42/runtime-view' },
+            { label: 'Deployment View', link: '/arc42/deployment-view' },
+            { label: 'Cross-cutting Concepts', link: '/arc42/cross-cutting-concepts' },
+            { label: 'Architecture Decisions', link: '/arc42/architecture-decisions' },
+            { label: 'Quality Requirements', link: '/arc42/quality-requirements' },
+            { label: 'Risks and Technical Depts', link: '/arc42/risks-and-technical-depts' },
+            { label: 'Glossary', link: '/arc42/glossary' }
           ]
         },
         {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' }
+          label: 'Concepts',
+          autogenerate: { directory: 'concepts' }
+        },
+        {
+          label: 'Guides',
+          autogenerate: { directory: 'guides' }
+        },
+        {
+          label: 'References',
+          autogenerate: { directory: 'references' }
         }
       ]
     })
