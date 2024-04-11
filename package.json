@@ -13,7 +13,8 @@
     "affected": "nx affected -t lint,build,test",
     "lint": "nx run-many -t lint --parallel",
     "build": "nx run-many -t build --parallel",
-    "test": "nx run-many -t test"
+    "test": "nx run-many -t test",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
