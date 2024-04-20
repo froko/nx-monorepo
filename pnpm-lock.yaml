@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
@@ -10,19 +10,19 @@ importers:
     devDependencies:
       '@semantic-release/changelog':
         specifier: ^6.0.3
-        version: 6.0.3(semantic-release@23.0.8)
+        version: 6.0.3(semantic-release@23.0.8(typescript@5.4.5))
       '@semantic-release/git':
         specifier: ^10.0.1
-        version: 10.0.1(semantic-release@23.0.8)
+        version: 10.0.1(semantic-release@23.0.8(typescript@5.4.5))
       nx:
         specifier: ^18.2.3
-        version: 18.3.2
+        version: 18.3.3
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
       semantic-release:
         specifier: ^23.0.8
-        version: 23.0.8
+        version: 23.0.8(typescript@5.4.5)
 
   docs:
     dependencies:
@@ -34,10 +34,10 @@ importers:
         version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.5)
       '@astrojs/starlight':
         specifier: ^0.21.5
-        version: 0.21.5(astro@4.6.3)
+        version: 0.21.5(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))
       astro:
         specifier: ^4.3.5
-        version: 4.6.3(typescript@5.4.5)
+        version: 4.6.3(@types/node@17.0.45)(typescript@5.4.5)
       sharp:
         specifier: ^0.33.0
         version: 0.33.3
@@ -678,66 +678,66 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@nrwl/tao@18.3.2':
-    resolution: {integrity: sha512-TQmaUMEIlKcytBpaHVG3VMPhfoJl09u3KaE6F1eJcFi7+za8rivH+HM+jlhwCAOlaC9bmnvJy0GvnFa5WtScsg==}
+  '@nrwl/tao@18.3.3':
+    resolution: {integrity: sha512-f/PUDLpSMEObiLQ5sIDySJM+5DxSCNunkxxbY1R9rmQ1cFcgrHaXIHQqbSj91mMa3mmtbKACk8u1LbI+oQV0Tg==}
     hasBin: true
 
-  '@nx/nx-darwin-arm64@18.3.2':
-    resolution: {integrity: sha512-x+C4a+DMGxHks/aKtyYa5+muF5BrJcDwxSPazRmrI9c80vo3J8TYjryXPHyZ/L3/3oNp72FtyPR46z3qf8NpQQ==}
+  '@nx/nx-darwin-arm64@18.3.3':
+    resolution: {integrity: sha512-NpA2/7o1uUuaocMYopX9muxKif9HlGfWaXo2UeiR918usF6xri4aUqweZbaXVc9iqCAEbVMWUsjaLYGKPXHAjw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@nx/nx-darwin-x64@18.3.2':
-    resolution: {integrity: sha512-5krmqFbsaeDLpSRaonEqlAiL4MBIWVguE9vs0/lp6vlnyIXT3TRftk4B4Tpi+PqIN6tC/Ll8gGoHzSdwHboAcg==}
+  '@nx/nx-darwin-x64@18.3.3':
+    resolution: {integrity: sha512-aydPLbc7DeceJ6szRf6DLT4ERoPvwfWyFiGXdAlEZYWhjEuNZLeG8K6jA3yHeWltKfX/qJqhnyKbnubBNzBKlQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@nx/nx-freebsd-x64@18.3.2':
-    resolution: {integrity: sha512-FenZBqJ5FK/QoExmngolq3q5NsOmJgrhy1Q3NiG0yOTcXnwIZO9pHmRDTZ33niTxuXSRvCgvJE4uBAM9YvptYw==}
+  '@nx/nx-freebsd-x64@18.3.3':
+    resolution: {integrity: sha512-sEYEWsK/fwC1l7wzls7RNOjhmrooH0lK0mpgj1vDXesLBSZ7k+pddAqaHFECN4QXBSbHZI2PWOEhbnIH+Errsg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [freebsd]
 
-  '@nx/nx-linux-arm-gnueabihf@18.3.2':
-    resolution: {integrity: sha512-xjh4WvRIN1vZpsL4tFlaAoZ15R/R4a7e+4Ai8h8evRA7Mz31k/iUEpfcF+6EJfwFX0IjI59QnWzZ19Z5XFfl0Q==}
+  '@nx/nx-linux-arm-gnueabihf@18.3.3':
+    resolution: {integrity: sha512-B9GGMkrrzwiAfvew22x85ITO9TiNxbgRbKJQWQaoopNpXrnSWpY8WTNxpDT24fwV1qdQfsPKcY3F4O0NOUgPRA==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
 
-  '@nx/nx-linux-arm64-gnu@18.3.2':
-    resolution: {integrity: sha512-Y82fDCuIjirdsS1tKfqC91qLdVhYS6NcU310fzMP4HI4A4WwdcMqHnn6E/O2glYW9CTYRQANo89fB44Zqbg7Cg==}
+  '@nx/nx-linux-arm64-gnu@18.3.3':
+    resolution: {integrity: sha512-1EucHf5/0JeqZmhritqkpEdOcdo9Dl32gpFvhNfS6kCAYmaDlEl4zqedz3VIoj4C7+C0pV3mcRO9qB9H7GM5bQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@nx/nx-linux-arm64-musl@18.3.2':
-    resolution: {integrity: sha512-iaGfejem22yJI707jlWMDwlUFStT3zzm+hUJOWcTH/owREVDDcX9SrYOcNoqecipGFttwEow7jtgg2E/9mb20A==}
+  '@nx/nx-linux-arm64-musl@18.3.3':
+    resolution: {integrity: sha512-HPgOgnYYLPVCBEaAkSEGPGzZqTDCiyCAF/qtvx5z0f1U/hZYb1ubgxw70ogY82Cafr7X4gQBz5k4/ZCnoCXlOQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@nx/nx-linux-x64-gnu@18.3.2':
-    resolution: {integrity: sha512-VV6T/tXURZ0r2N6VArI0JW4+Lf6Zq4UssCn6GS3cj75q7OhsQDqgcVIjET7zjqRhrc6ndZdi7d4YdEndOEMU+Q==}
+  '@nx/nx-linux-x64-gnu@18.3.3':
+    resolution: {integrity: sha512-FgYTQ3VEE6EUOGtJT9riRK8IBwPGFjKS+N2mudQJn2bB/9IumUvVRYQUIX08gqGLlqZPO6uUUhUjwZY8SnjRLQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@nx/nx-linux-x64-musl@18.3.2':
-    resolution: {integrity: sha512-Pg3/HmNbCTd5Hm/EXHu+FRl4OInbqX44qh0pMpSuCSIjVPbyCXlKCQRsQWo6d3KQIUOvYsBZRAKjHVhhywcScg==}
+  '@nx/nx-linux-x64-musl@18.3.3':
+    resolution: {integrity: sha512-QnWjGViR1Wj9gJXa1RJ9mXyy2/JzQ7NF2C4ulTYSH5St1HoxhkfnLsV0+uNLFEV9PSZq+2BfxmQuT8Appefv1A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@nx/nx-win32-arm64-msvc@18.3.2':
-    resolution: {integrity: sha512-c1aOj27HjQPDrGwHm2ytQfHQNMFJ8AyKLtWOEGMhUwDsRRqHd61Pg8kqSac1A9sdrSq4jRfVYsbzaGl1bE+gcw==}
+  '@nx/nx-win32-arm64-msvc@18.3.3':
+    resolution: {integrity: sha512-Xn3LUaPsF8QkEYUVV3lc693NTCMWrfZBFXTy1cQpvLzQ+idsXQ/EGWoq93cIM3Nc2YWyblT2hHHelb8dHCZAlw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@nx/nx-win32-x64-msvc@18.3.2':
-    resolution: {integrity: sha512-yDSYZch5RUQKFeGBloAbIKIeYNg8862ZX/lT54GeSYnI/32KqFABwuCV+tGjvPoTgA4Q0sI/F8i0NPhYwsC1Ww==}
+  '@nx/nx-win32-x64-msvc@18.3.3':
+    resolution: {integrity: sha512-t8HvOnQEiaaoTFOOIrql30NPhIwDFO7jg0Jtz3Tbneulh7ceswJp71yFHsRGGrYZ23Tgg+Sna6M9qLRGzlRGkg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -2795,8 +2795,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nx@18.3.2:
-    resolution: {integrity: sha512-kgkfmkwJQQ8Fp5AkvoZlnRaUrdJhckte8RyFhy86VeYjUcWYzV6shrbasKxTB0ZvCikHYjbI7QnmVYmZujEjhQ==}
+  nx@18.3.3:
+    resolution: {integrity: sha512-GqC5ANfTWV6SFbgquZwuRMI2Z2nO0c0Yx4JzM3x32aJOgXsmRml3WcV0a5648bIXSen34gylHYl2EHaxVWkzNQ==}
     hasBin: true
     peerDependencies:
       '@swc-node/register': ^1.8.0
@@ -3980,8 +3980,6 @@ snapshots:
       '@volar/language-service': 2.1.6
       '@volar/typescript': 2.1.6
       fast-glob: 3.3.2
-      prettier: 3.2.5
-      prettier-plugin-astro: 0.13.0
       volar-service-css: 0.0.34(@volar/language-service@2.1.6)
       volar-service-emmet: 0.0.34(@volar/language-service@2.1.6)
       volar-service-html: 0.0.34(@volar/language-service@2.1.6)
@@ -3990,6 +3988,9 @@ snapshots:
       volar-service-typescript-twoslash-queries: 0.0.34(@volar/language-service@2.1.6)
       vscode-html-languageservice: 5.2.0
       vscode-uri: 3.0.8
+    optionalDependencies:
+      prettier: 3.2.5
+      prettier-plugin-astro: 0.13.0
     transitivePeerDependencies:
       - typescript
 
@@ -4039,12 +4040,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@2.2.4(astro@4.6.3)':
+  '@astrojs/mdx@2.2.4(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.0.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.6.3(typescript@5.4.5)
+      astro: 4.6.3(@types/node@17.0.45)(typescript@5.4.5)
       es-module-lexer: 1.5.0
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -4069,15 +4070,15 @@ snapshots:
       sitemap: 7.1.1
       zod: 3.22.5
 
-  '@astrojs/starlight@0.21.5(astro@4.6.3)':
+  '@astrojs/starlight@0.21.5(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))':
     dependencies:
-      '@astrojs/mdx': 2.2.4(astro@4.6.3)
+      '@astrojs/mdx': 2.2.4(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))
       '@astrojs/sitemap': 3.1.2
       '@pagefind/default-ui': 1.1.0
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.3
-      astro: 4.6.3(typescript@5.4.5)
-      astro-expressive-code: 0.33.5(astro@4.6.3)
+      astro: 4.6.3(@types/node@17.0.45)(typescript@5.4.5)
+      astro-expressive-code: 0.33.5(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.1
       hast-util-select: 6.0.2
@@ -4570,43 +4571,43 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@nrwl/tao@18.3.2':
+  '@nrwl/tao@18.3.3':
     dependencies:
-      nx: 18.3.2
+      nx: 18.3.3
       tslib: 2.6.2
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
       - debug
 
-  '@nx/nx-darwin-arm64@18.3.2':
+  '@nx/nx-darwin-arm64@18.3.3':
     optional: true
 
-  '@nx/nx-darwin-x64@18.3.2':
+  '@nx/nx-darwin-x64@18.3.3':
     optional: true
 
-  '@nx/nx-freebsd-x64@18.3.2':
+  '@nx/nx-freebsd-x64@18.3.3':
     optional: true
 
-  '@nx/nx-linux-arm-gnueabihf@18.3.2':
+  '@nx/nx-linux-arm-gnueabihf@18.3.3':
     optional: true
 
-  '@nx/nx-linux-arm64-gnu@18.3.2':
+  '@nx/nx-linux-arm64-gnu@18.3.3':
     optional: true
 
-  '@nx/nx-linux-arm64-musl@18.3.2':
+  '@nx/nx-linux-arm64-musl@18.3.3':
     optional: true
 
-  '@nx/nx-linux-x64-gnu@18.3.2':
+  '@nx/nx-linux-x64-gnu@18.3.3':
     optional: true
 
-  '@nx/nx-linux-x64-musl@18.3.2':
+  '@nx/nx-linux-x64-musl@18.3.3':
     optional: true
 
-  '@nx/nx-win32-arm64-msvc@18.3.2':
+  '@nx/nx-win32-arm64-msvc@18.3.3':
     optional: true
 
-  '@nx/nx-win32-x64-msvc@18.3.2':
+  '@nx/nx-win32-x64-msvc@18.3.3':
     optional: true
 
   '@octokit/auth-token@5.1.0': {}
@@ -4744,15 +4745,15 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.14.3':
     optional: true
 
-  '@semantic-release/changelog@6.0.3(semantic-release@23.0.8)':
+  '@semantic-release/changelog@6.0.3(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       fs-extra: 11.2.0
       lodash: 4.17.21
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
 
-  '@semantic-release/commit-analyzer@12.0.0(semantic-release@23.0.8)':
+  '@semantic-release/commit-analyzer@12.0.0(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       conventional-changelog-angular: 7.0.0
       conventional-commits-filter: 4.0.0
@@ -4761,7 +4762,7 @@ snapshots:
       import-from-esm: 1.3.3
       lodash-es: 4.17.21
       micromatch: 4.0.5
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
     transitivePeerDependencies:
       - supports-color
 
@@ -4769,7 +4770,7 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@23.0.8)':
+  '@semantic-release/git@10.0.1(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -4779,11 +4780,11 @@ snapshots:
       lodash: 4.17.21
       micromatch: 4.0.5
       p-reduce: 2.1.0
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@10.0.3(semantic-release@23.0.8)':
+  '@semantic-release/github@10.0.3(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       '@octokit/core': 6.1.2
       '@octokit/plugin-paginate-rest': 11.0.1(@octokit/core@6.1.2)
@@ -4800,12 +4801,12 @@ snapshots:
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@12.0.0(semantic-release@23.0.8)':
+  '@semantic-release/npm@12.0.0(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
@@ -4818,11 +4819,11 @@ snapshots:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
       semver: 7.6.0
       tempy: 3.1.0
 
-  '@semantic-release/release-notes-generator@13.0.0(semantic-release@23.0.8)':
+  '@semantic-release/release-notes-generator@13.0.0(semantic-release@23.0.8(typescript@5.4.5))':
     dependencies:
       conventional-changelog-angular: 7.0.0
       conventional-changelog-writer: 7.0.1
@@ -4834,7 +4835,7 @@ snapshots:
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-pkg-up: 11.0.0
-      semantic-release: 23.0.8
+      semantic-release: 23.0.8(typescript@5.4.5)
     transitivePeerDependencies:
       - supports-color
 
@@ -5084,13 +5085,13 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro-expressive-code@0.33.5(astro@4.6.3):
+  astro-expressive-code@0.33.5(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5)):
     dependencies:
-      astro: 4.6.3(typescript@5.4.5)
+      astro: 4.6.3(@types/node@17.0.45)(typescript@5.4.5)
       hast-util-to-html: 8.0.4
       remark-expressive-code: 0.33.5
 
-  astro@4.6.3(typescript@5.4.5):
+  astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.7.1
       '@astrojs/internal-helpers': 0.4.0
@@ -5149,8 +5150,8 @@ snapshots:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.9
-      vitefu: 0.2.5(vite@5.2.9)
+      vite: 5.2.9(@types/node@17.0.45)
+      vitefu: 0.2.5(vite@5.2.9(@types/node@17.0.45))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.5
@@ -5458,12 +5459,14 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig@9.0.0:
+  cosmiconfig@9.0.0(typescript@5.4.5):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
+    optionalDependencies:
+      typescript: 5.4.5
 
   cross-spawn@7.0.3:
     dependencies:
@@ -7163,9 +7166,9 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nx@18.3.2:
+  nx@18.3.3:
     dependencies:
-      '@nrwl/tao': 18.3.2
+      '@nrwl/tao': 18.3.3
       '@yarnpkg/lockfile': 1.1.0
       '@yarnpkg/parsers': 3.0.0-rc.46
       '@zkochan/js-yaml': 0.0.6
@@ -7200,16 +7203,16 @@ snapshots:
       yargs: 17.7.2
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@nx/nx-darwin-arm64': 18.3.2
-      '@nx/nx-darwin-x64': 18.3.2
-      '@nx/nx-freebsd-x64': 18.3.2
-      '@nx/nx-linux-arm-gnueabihf': 18.3.2
-      '@nx/nx-linux-arm64-gnu': 18.3.2
-      '@nx/nx-linux-arm64-musl': 18.3.2
-      '@nx/nx-linux-x64-gnu': 18.3.2
-      '@nx/nx-linux-x64-musl': 18.3.2
-      '@nx/nx-win32-arm64-msvc': 18.3.2
-      '@nx/nx-win32-x64-msvc': 18.3.2
+      '@nx/nx-darwin-arm64': 18.3.3
+      '@nx/nx-darwin-x64': 18.3.3
+      '@nx/nx-freebsd-x64': 18.3.3
+      '@nx/nx-linux-arm-gnueabihf': 18.3.3
+      '@nx/nx-linux-arm64-gnu': 18.3.3
+      '@nx/nx-linux-arm64-musl': 18.3.3
+      '@nx/nx-linux-x64-gnu': 18.3.3
+      '@nx/nx-linux-x64-musl': 18.3.3
+      '@nx/nx-win32-arm64-msvc': 18.3.3
+      '@nx/nx-win32-x64-msvc': 18.3.3
     transitivePeerDependencies:
       - debug
 
@@ -7759,15 +7762,15 @@ snapshots:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
 
-  semantic-release@23.0.8:
+  semantic-release@23.0.8(typescript@5.4.5):
     dependencies:
-      '@semantic-release/commit-analyzer': 12.0.0(semantic-release@23.0.8)
+      '@semantic-release/commit-analyzer': 12.0.0(semantic-release@23.0.8(typescript@5.4.5))
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 10.0.3(semantic-release@23.0.8)
-      '@semantic-release/npm': 12.0.0(semantic-release@23.0.8)
-      '@semantic-release/release-notes-generator': 13.0.0(semantic-release@23.0.8)
+      '@semantic-release/github': 10.0.3(semantic-release@23.0.8(typescript@5.4.5))
+      '@semantic-release/npm': 12.0.0(semantic-release@23.0.8(typescript@5.4.5))
+      '@semantic-release/release-notes-generator': 13.0.0(semantic-release@23.0.8(typescript@5.4.5))
       aggregate-error: 5.0.0
-      cosmiconfig: 9.0.0
+      cosmiconfig: 9.0.0(typescript@5.4.5)
       debug: 4.3.4
       env-ci: 11.0.0
       execa: 8.0.1
@@ -8158,7 +8161,7 @@ snapshots:
   trough@2.2.0: {}
 
   tsconfck@3.0.3(typescript@5.4.5):
-    dependencies:
+    optionalDependencies:
       typescript: 5.4.5
 
   tsconfig-paths@4.2.0:
@@ -8403,56 +8406,62 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.2.9:
+  vite@5.2.9(@types/node@17.0.45):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.3
     optionalDependencies:
+      '@types/node': 17.0.45
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.2.9):
-    dependencies:
-      vite: 5.2.9
+  vitefu@0.2.5(vite@5.2.9(@types/node@17.0.45)):
+    optionalDependencies:
+      vite: 5.2.9(@types/node@17.0.45)
 
   volar-service-css@0.0.34(@volar/language-service@2.1.6):
     dependencies:
-      '@volar/language-service': 2.1.6
       vscode-css-languageservice: 6.2.13
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.1.6
 
   volar-service-emmet@0.0.34(@volar/language-service@2.1.6):
     dependencies:
-      '@volar/language-service': 2.1.6
       '@vscode/emmet-helper': 2.9.2
       vscode-html-languageservice: 5.2.0
+    optionalDependencies:
+      '@volar/language-service': 2.1.6
 
   volar-service-html@0.0.34(@volar/language-service@2.1.6):
     dependencies:
-      '@volar/language-service': 2.1.6
       vscode-html-languageservice: 5.2.0
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.1.6
 
   volar-service-prettier@0.0.34(@volar/language-service@2.1.6)(prettier@3.2.5):
     dependencies:
+      vscode-uri: 3.0.8
+    optionalDependencies:
       '@volar/language-service': 2.1.6
       prettier: 3.2.5
-      vscode-uri: 3.0.8
 
   volar-service-typescript-twoslash-queries@0.0.34(@volar/language-service@2.1.6):
-    dependencies:
+    optionalDependencies:
       '@volar/language-service': 2.1.6
 
   volar-service-typescript@0.0.34(@volar/language-service@2.1.6):
     dependencies:
-      '@volar/language-service': 2.1.6
       path-browserify: 1.0.1
       semver: 7.6.0
       typescript-auto-import-cache: 0.3.2
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
+    optionalDependencies:
+      '@volar/language-service': 2.1.6
 
   vscode-css-languageservice@6.2.13:
     dependencies:
