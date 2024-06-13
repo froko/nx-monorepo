@@ -19,9 +19,9 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "nx": "^19.0.0",
-    "prettier": "^3.2.5",
-    "semantic-release": "^23.0.8"
+    "nx": "^19.2.3",
+    "prettier": "^3.3.2",
+    "semantic-release": "^24.0.0"
   },
-  "packageManager": "pnpm@9.1.0"
+  "packageManager": "pnpm@9.3.0"
 }
