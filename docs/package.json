@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "format": "prettier . --write",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -10,10 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@akebifiky/remark-simple-plantuml": "^1.0.2",
+    "@astrojs/check": "^0.9.3",
     "@astrojs/starlight": "^0.27.1",
     "astro": "^4.15.3",
     "sharp": "^0.32.5",
-    "@astrojs/check": "^0.9.3",
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
