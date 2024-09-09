@@ -14,10 +14,14 @@
     "all": "nx run-many -t lint,build,test",
     "lint": "nx run-many -t lint --parallel",
     "build": "nx run-many -t build --parallel",
-    "test": "nx run-many -t test"
+    "test": "nx run-many -t test",
+    "release": "semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "nx": "^19.6.6",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.0"
   }
 }
