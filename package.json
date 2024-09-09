@@ -8,6 +8,10 @@
     "url": "https://github.com/froko/nx-monorepo.git"
   },
   "license": "MIT",
-  "scripts": {},
-  "devDependencies": {}
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }
