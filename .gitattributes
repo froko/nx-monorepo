@@ -105,4 +105,3 @@ tsconfig.json     linguist-language=JSON-with-Comments
 devcontainer.json   linguist-language=JSON-with-Comments
 
 CHANGELOG.md        export-ignore
-renovate.json       export-ignore
