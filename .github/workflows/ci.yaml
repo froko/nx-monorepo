@@ -6,6 +6,14 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: write
+  checks: write
+  pull-requests: write
+
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -26,24 +34,14 @@ jobs:
           version: 9
           run_install: false
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
-      - name: Find Git SHAs for affected tasks
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v4
 
       - name: Run affected tasks
         run: pnpm affected
+
+      #      - name: Run all tasks
+      #        run: pnpm all
