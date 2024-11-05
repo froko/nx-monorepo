@@ -15,7 +15,7 @@ A solid starting point for your new Nx based MonoRepo.
 
 1. Run the following command to create a new project-name
 
-   `npx degit https://github.com/froko/dotnet/monorepo <project-name>`
+   `npx degit https://github.com/froko/nx-monorepo <project-name>`
 
 2. Run `pnpm install`
 
