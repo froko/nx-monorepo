@@ -7,7 +7,8 @@ A solid starting point for your new Nx based MonoRepo.
 - pnpm workspace
 - Nx
 - semantic-release
-- GitHub Actions for linting PR title with Conventional Commit rules, CI & Release
+- GitHub Actions for linting PR title with Conventional Commit rules, CI &
+  Release
 - Arc42 documentation template with Astro Starlight
 - Renovate for automated dependency updates
 
