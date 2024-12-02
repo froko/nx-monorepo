@@ -1,9 +1,6 @@
-.nx
-
 apps
 libs
 docs
 
-dist
 CHANGELOG.md
 pnpm-lock.yaml
