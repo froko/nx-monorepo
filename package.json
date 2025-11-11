@@ -21,7 +21,7 @@
     "@froko/prettier-config": "^1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "nx": "^21.0.0",
+    "nx": "^22.0.0",
     "semantic-release": "^24.1.0"
   },
   "packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40"
