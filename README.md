@@ -10,7 +10,6 @@ A solid starting point for your new Nx based MonoRepo.
 - GitHub Actions for linting PR title with Conventional Commit rules, CI &
   Release
 - Arc42 documentation template with Astro Starlight
-- Renovate for automated dependency updates
 
 ## Getting Started
 
@@ -29,7 +28,6 @@ A solid starting point for your new Nx based MonoRepo.
    ```
 
 4. Make it yours by changing some information in the following files
-
    - `README.json`
    - `package.json` (name, description, author, repository url)
    - `docs/astro.config.json` (title, social url)
@@ -70,5 +68,4 @@ the `pnpm-workspace.yaml` file. Nx will automatically adhere to these changes.
 - [Arc42](https://arc42.org/)
 - [Astro](https://astro.build/)
 - [Astro Starlight](https://starlight.astro.build/)
-- [Renovate](https://docs.renovatebot.com/)
 - [dotnet-monorepo](https://github.com/froko/dotnet-monorepo)

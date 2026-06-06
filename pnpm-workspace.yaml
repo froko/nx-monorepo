@@ -2,3 +2,7 @@ packages:
   - 'apps/*'
   - 'libs/*'
   - 'docs'
+allowBuilds:
+  esbuild: true
+  nx: true
+  sharp: true

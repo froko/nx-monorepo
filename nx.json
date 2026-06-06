@@ -1,4 +1,6 @@
 {
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "analytics": false,
   "targetDefaults": {
     "format": {
       "cache": true
@@ -11,7 +13,6 @@
       "cache": true
     },
     "test": {
-      "dependsOn": ["build"],
       "cache": true
     }
   }

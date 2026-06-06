@@ -18,7 +18,10 @@ dist
 *.user
 
 # Tooling
-.nx
+.nx/cache
+.nx/workspace-data
+.claude/worktrees
+.claude/settings.local.json
 .eslintcache
 .astro
 

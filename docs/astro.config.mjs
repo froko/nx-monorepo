@@ -1,18 +1,31 @@
+// @ts-check
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import simplePlantUML from '@akebifiky/remark-simple-plantuml'
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: '../dist/docs',
+  // Keep outDir inside the project root. Astro stages image originals in a
+  // fallback `.astro/` dir when outDir is outside cwd, which breaks image
+  // optimization on a clean cache (e.g. in CI).
+  outDir: './dist',
   markdown: {
     remarkPlugins: [simplePlantUML],
+  },
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+    },
   },
   integrations: [
     starlight({
       title: 'nx-monorepo',
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/froko/nx-monorepo' },
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/froko/nx-monorepo',
+        },
       ],
       sidebar: [
         {
@@ -58,15 +71,15 @@ export default defineConfig({
         },
         {
           label: 'Concepts',
-          autogenerate: { directory: 'concepts' },
+          items: [{ autogenerate: { directory: 'concepts' } }],
         },
         {
           label: 'Guides',
-          autogenerate: { directory: 'guides' },
+          items: [{ autogenerate: { directory: 'guides' } }],
         },
         {
           label: 'References',
-          autogenerate: { directory: 'references' },
+          items: [{ autogenerate: { directory: 'references' } }],
         },
       ],
     }),
