@@ -40,7 +40,7 @@ Nx + pnpm monorepo starter (semantic-release, Arc42 docs via Astro Starlight).
 <!-- nx configuration start-->
 <!-- Leave the start & end comments to automatically receive updates. -->
 
-# General Guidelines for working with Nx
+## General Guidelines for working with Nx
 
 - For navigating/exploring the workspace, invoke the `nx-workspace` skill
   first - it has patterns for querying projects, targets, and dependencies

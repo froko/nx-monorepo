@@ -1,8 +1,17 @@
 # Dependencies
 node_modules
+.pnpm-store
 
 # Build outputs
 dist
+build
+out
+
+# Caches
+.cache
+.temp
+.tmp
+*.tsbuildinfo
 
 # Editors
 .idea
@@ -20,15 +29,25 @@ dist
 # Tooling
 .nx/cache
 .nx/workspace-data
-.claude/worktrees
-.claude/settings.local.json
+.nx/polygraph
 .eslintcache
 .astro
+
+# AI agents (track shared config, ignore local-only files)
+.claude/settings.local.json
+.claude/worktrees
 
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .pnpm-debug.log*
+
+# Coverage / test output
+coverage
+.nyc_output
 
 # dotenv environment variable files
 .env
