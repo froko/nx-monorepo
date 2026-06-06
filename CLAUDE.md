@@ -1,7 +1,46 @@
+# Repo Notes
+
+Nx + pnpm monorepo starter (semantic-release, Arc42 docs via Astro Starlight).
+
+## Layout
+
+- Workspaces (`pnpm-workspace.yaml`): `apps/*`, `libs/*`, `docs`.
+- `apps/` and `libs/` are empty (only `.gitkeep`) — this is a starter; the only
+  real project is `docs` (Astro Starlight).
+- Package manager is **pnpm** (pinned via `packageManager` in `package.json`).
+  Use `pnpm`, not npm/yarn.
+
+## Commands (run from root)
+
+- `pnpm all` — lint + build + test all projects.
+- `pnpm affected` — lint + build + test affected projects only (preferred for
+  changes).
+- `pnpm format` — `prettier . --write` then per-project `nx format`. Always run
+  before committing.
+- `pnpm lint` / `pnpm build` / `pnpm test` — single-target across projects.
+- Single project: `pnpm exec nx <target> <project>` (e.g.
+  `pnpm exec nx build docs`).
+- Docs dev server: `pnpm exec nx dev docs` (or `cd docs && pnpm dev`).
+
+## Gotchas
+
+- `build` depends on `^build` (see `nx.json` `targetDefaults`) — a project
+  builds its dependencies first.
+- Node `24` (see `.nvmrc` and CI in `.github/workflows/*.yml`).
+- Prettier config is shared from `@froko/prettier-config` via a root
+  `prettier.config.mjs`; `docs/prettier.config.mjs` imports
+  `../prettier.config.mjs` and adds the Astro plugin. Don't add ad-hoc
+  per-project prettier rules.
+- Commits/PR titles must follow Conventional Commits — enforced by the `Lint PR`
+  workflow and consumed by semantic-release. Use types like `feat:`, `fix:`,
+  `chore:`.
+- Releases are `semantic-release` (manual `Release` workflow / `pnpm release`);
+  never hand-edit versions or `CHANGELOG`.
+
 <!-- nx configuration start-->
 <!-- Leave the start & end comments to automatically receive updates. -->
 
-# General Guidelines for working with Nx
+## General Guidelines for working with Nx
 
 - For navigating/exploring the workspace, invoke the `nx-workspace` skill
   first - it has patterns for querying projects, targets, and dependencies
